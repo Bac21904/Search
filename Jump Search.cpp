@@ -24,10 +24,11 @@ int jumpSearch(int arr[], int x, int n) {
 
 int main() {
     int arr[100000];
-    int n;
-    cin>>n;
+    int n=100000;
     for(int i=0;i<n;i++) arr[i]=i;
-    int x = 9999;
+    int x;
+    cout<<"Nhap gia tri can tim: ";
+    cin>>x;
     int index = jumpSearch(arr, x, n);
 
     if (index != -1)
