@@ -24,11 +24,12 @@ int ternarySearch(int l, int r, int key, int ar[]) {
 }
 int main() {
     int ar[100000];
-    int r;
-    cin>>r;
+    int r=100000;
     for(int i=0;i<r;i++) ar[i]=i;
     int l=0;
-    int key = 99999;
+    int key;
+    cout<<"Nhap gia tri can tim: ";
+    cin>>key;
     int p = ternarySearch(l, r, key, ar);
     if (p != -1)
         cout << "Phan tu duoc tim thay tai chi so : " << p << endl;
