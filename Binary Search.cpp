@@ -14,10 +14,11 @@ int binarySearch(int arr[], int l, int r, int x) {
 
 int main(void) {
     int arr[100000];
-    int n;
-    cin>>n;
+    int n=100000;
     for(int i=0;i<n;i++) arr[i]=i;
-    int x = 9999;
+    int x;
+    cout<<"nhap gia tri can tim: ";
+    cin>>x;
     int result = binarySearch(arr, 0, n - 1, x);
     if(result == -1)
         cout << "Phan tu khong ton tai trong mang";
