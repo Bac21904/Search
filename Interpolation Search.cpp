@@ -11,9 +11,15 @@ int InterpolationSearch( int arr[], int n, int x)
 				return l;
 			return -1;
 		}
-		l++;
-		r--;
+		int tg= l + (((double) (r-l) / (arr[r]-arr[j])) * (x - l));
+		if(arr[tg]==x)
+			return tg;
+		if(arr[tg]<x)
+			l = tg + 1;
+		if(arr[tg]>x)
+			r = tg - 1;
 	}
+	return -1;
 }
 int main()
 {
