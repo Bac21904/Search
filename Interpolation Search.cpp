@@ -28,6 +28,6 @@ int main()
 	cin>>x;
 	int tg=InterpolationSearch(arr, n, x);
 	if(tg==-1) cout<<"phan tu can tim khong o trong mang";
-	else cout<<"phan tu can tim o vi tri thu "<<tg;
+	else cout<<"phan tu can tim o vi tri thu "<<tg+1;
 	return 0;
 }
